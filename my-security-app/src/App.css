@@ -1,0 +1,128 @@
+/* App.css */
+body {
+  background-color: rgb(36, 36, 36);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 45px;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 45px;
+  color: #3b82f6;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: rgb(91, 91, 91);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+.user-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* To make the form vertically centered on the page */
+  background-color: #f9fafb; /* Optional: light background color */
+}
+
+.input-field {
+  width: 300px; /* Set a specific width */
+  padding: 12px 16px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.submit-button {
+  width: 200px;
+  padding: 12px 16px;
+  margin-top: 20px;
+  background-color: #3b82f6; /* Tailwind Blue */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.submit1-button {
+  width: 85px;
+  padding: 12px 16px;
+  margin-top: 20px;
+  background-color: #3b82f6; /* Tailwind Blue */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.submit1-button:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+.submit-button:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+/* App.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9fafb;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.start-button {
+  width: 200px;
+  padding: 12px 16px;
+  background-color: #3b82f6; /* Tailwind Blue */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+th {
+  color: #000000; /* Tailwind Blue */
+}
+td {
+  color: #000000; /* Tailwind Blue */
+}
