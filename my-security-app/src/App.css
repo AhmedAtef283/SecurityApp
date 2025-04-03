@@ -1,6 +1,6 @@
 /* App.css */
 body {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(255, 255, 255);
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -126,3 +126,5 @@ th {
 td {
   color: #000000; /* Tailwind Blue */
 }
+
+

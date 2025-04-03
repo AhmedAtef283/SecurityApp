@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
 
 const UserInputPage = () => {
   const [username, setUsername] = useState("");
@@ -10,12 +11,13 @@ const UserInputPage = () => {
     if (username && platform) {
       navigate("/logs", { state: { username, platform } });
     } else {
-      alert("Please Fill Empty Values");
+      toast.error("Please Fill Empty Values");
     }
   };
 
   return (
     <div className="user-input-container">
+      <Toaster/>
       <h2 className="text-xl font-bold mb-4">User Details</h2>
       <input
         type="text"
