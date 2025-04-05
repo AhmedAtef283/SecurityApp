@@ -20,8 +20,6 @@ const LogTablePage = () => {
         const response = await fetch("https://api64.ipify.org?format=json");
         const data = await response.json();
         setUserIp(data.ip);
-
-        // Simulated API log data including the fetched IP
         const fakeLogs = [{ id: 1, ip: data.ip }];
 
         // Filter out blocked IPs
@@ -42,7 +40,7 @@ const LogTablePage = () => {
     localStorage.setItem("blockedIps", JSON.stringify(updatedBlockedIps));
 
     setLogs(logs.filter((log) => log.id !== id));
-    toast.error(`IP ${ip} blocked due to brute-force attempts!`);
+    toast.success(`IP ${ip} blocked due to brute-force attempts!`);
     navigate("/ipblocked");
   };
 
@@ -56,7 +54,9 @@ const LogTablePage = () => {
       <div className="table-auto border-collapse border border-gray-300 bg-white p-6">
         <Toaster />
         <div className="card">
-          <h2>Login Attempts for {location.state?.username || "Unknown User"}</h2>
+          <h2>
+            Login Attempts for {location.state?.username || "Unknown User"}
+          </h2>
           {loading ? (
             <p className="text-center text-gray-500">Loading logs...</p>
           ) : (
